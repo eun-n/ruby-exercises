@@ -8,7 +8,7 @@
 # > {"b"=>1, "a"=>3, "n"=>2}
 
 def letter_count(string)
- puts "#{string}".split('').to_a
+  puts Hash[string.delete(' ').split('').group_by{ |c| c }.map{ |k, v| [k, v.size] }]
 end
 
-letter_count('banana')
+letter_count('stuff')
