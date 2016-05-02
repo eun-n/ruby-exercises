@@ -9,3 +9,14 @@
 # > 120
 #
 # 5! = 5 * 4 * 3 * 2 * 1
+def factorial(num)
+a = 1
+i = 1
+while i < num+1 do
+  a *= i
+  i += 1
+end
+puts a
+end
+
+factorial(4)

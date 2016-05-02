@@ -7,3 +7,8 @@
 #
 # > {"b"=>1, "a"=>3, "n"=>2}
 
+def letter_count(string)
+ puts "#{string}".split('').to_a
+end
+
+letter_count('banana')

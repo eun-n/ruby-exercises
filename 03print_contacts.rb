@@ -17,3 +17,11 @@ contacts = {
   :Lenny => "444-444-4444",
   :Daniel => "777-777-7777"
 }
+
+def print_contacts(blah)
+	puts "Brian has a phone number of #{blah[:Brian]}"
+	puts "Lenny has a phone number of #{blah[:Lenny]}"
+	puts "Daniel has a phone number of #{blah[:Daniel]}"
+end
+
+print_contacts(contacts)
